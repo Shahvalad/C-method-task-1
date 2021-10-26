@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(CountOfNumber(new int[4], 5));
+        }
+        static int CountOfNumber(int[] arr, int num)
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if(arr[i]==num)
+                {
+                    count++;
+                }
+            }
+            return count;
+
+        }
+    }
+}
